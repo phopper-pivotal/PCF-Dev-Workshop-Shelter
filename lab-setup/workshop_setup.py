@@ -61,9 +61,15 @@ def createSpace(org=None, space=None):
 
 if __name__=="__main__":
 	org = sys.argv[1]
+<<<<<<< HEAD
 	#createOrg(org)
 	#createSpace(org, "dev")	
     #createSpace(org, "production")
+=======
+	createOrg(org)
+	createSpace(org, "development")	
+        createSpace(org, "production")
+>>>>>>> 50481c4c91ab18d0335f9d6be2aa8069b5519172
 	with open("admins.txt") as f:
                 for line in f:
                         email = line.strip()
